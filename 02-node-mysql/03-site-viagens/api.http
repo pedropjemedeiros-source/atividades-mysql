@@ -1,0 +1,98 @@
+### Listar todos os clientes
+GET http://localhost:3001/clientes
+
+### Buscar cliente por ID
+GET http://localhost:3001/clientes/1
+
+### Cadastrar novo cliente
+POST http://localhost:3001/clientes
+Content-Type: application/json
+
+{
+  "nome": "Fernando Souza",
+  "email": "fernando.souza@email.com",
+  "telefone": "(11) 95555-8888"
+}
+
+### Atualizar cliente
+PUT http://localhost:3001/clientes/1
+Content-Type: application/json
+
+{
+  "nome": "Mariana Lima Silva",
+  "email": "mariana.silva@email.com",
+  "telefone": "(11) 98888-2222"
+}
+
+### Remover cliente
+DELETE http://localhost:3001/clientes/1
+
+---
+
+### Listar destinos turísticos
+GET http://localhost:3001/destinos
+
+### Buscar destino por ID
+GET http://localhost:3001/destinos/1
+
+### Cadastrar novo destino
+POST http://localhost:3001/destinos
+Content-Type: application/json
+
+{
+  "cidade": "Bonito",
+  "estado": "MS",
+  "pais": "Brasil",
+  "descricao": "Ecoturismo com rios cristalinos e grutas"
+}
+
+### Atualizar destino
+PUT http://localhost:3001/destinos/1
+Content-Type: application/json
+
+{
+  "cidade": "Natal",
+  "estado": "RN",
+  "pais": "Brasil",
+  "descricao": "Praias paradisíacas e passeios de buggy"
+}
+
+### Remover destino
+DELETE http://localhost:3001/destinos/1
+
+---
+
+### Listar pacotes de viagem
+GET http://localhost:3001/pacotes
+
+### Buscar pacote por ID
+GET http://localhost:3001/pacotes/1
+
+### Cadastrar pacote de viagem
+POST http://localhost:3001/pacotes
+Content-Type: application/json
+
+{
+  "id_cliente": 2,
+  "id_destino": 2,
+  "data_ida": "2027-07-01",
+  "data_volta": "2027-07-08",
+  "preco": 2150.00,
+  "status": "confirmado"
+}
+
+### Atualizar pacote de viagem
+PUT http://localhost:3001/pacotes/1
+Content-Type: application/json
+
+{
+  "id_cliente": 1,
+  "id_destino": 1,
+  "data_ida": "2027-01-12",
+  "data_volta": "2027-01-19",
+  "preco": 2399.00,
+  "status": "concluído"
+}
+
+### Remover pacote de viagem
+DELETE http://localhost:3001/pacotes/1

@@ -1,0 +1,74 @@
+### Listar Fornecedores
+GET http://localhost:3002/fornecedores
+
+### Cadastrar Fornecedor
+POST http://localhost:3002/fornecedores
+Content-Type: application/json
+
+{
+  "nome": "Distribuidora Nacional",
+  "telefone": "(21) 2555-9999",
+  "endereco": "Av. Brasil, 1500 - Rio de Janeiro, RJ"
+}
+
+---
+
+### Listar Produtos com Fornecedor e Identificação
+GET http://localhost:3002/produtos
+
+### Cadastrar Produto com Identificação
+POST http://localhost:3002/produtos
+Content-Type: application/json
+
+{
+  "id_fornecedor": 1,
+  "nome": "SSD NVMe 1TB Gen4",
+  "descricao": "Leitura de até 7000MB/s e dissipador integrado",
+  "observacao": "Compatível com PS5 e PC"
+}
+
+---
+
+### Listar Filiais
+GET http://localhost:3002/filiais
+
+### Cadastrar Filial
+POST http://localhost:3002/filiais
+Content-Type: application/json
+
+{
+  "cnpj": "12.345.678/0003-52",
+  "nome": "Filial Minas Belo Horizonte",
+  "telefone": "(31) 3300-0003",
+  "endereco": "Av. Afonso Pena, 800 - Belo Horizonte, MG"
+}
+
+---
+
+### Listar Estoque nas Filiais
+GET http://localhost:3002/estoque
+
+### Cadastrar Produto no Estoque de uma Filial
+POST http://localhost:3002/estoque
+Content-Type: application/json
+
+{
+  "id_produto": 2,
+  "cnpj_filial": "12.345.678/0002-71",
+  "preco": 289.90,
+  "quantidade": 20,
+  "validade": "2029-12-31"
+}
+
+### Atualizar Preço/Quantidade em Estoque
+PUT http://localhost:3002/estoque/1/12.345.678%2F0001-90
+Content-Type: application/json
+
+{
+  "preco": 1199.90,
+  "quantidade": 30,
+  "validade": "2028-12-31"
+}
+
+### Remover Registro de Estoque
+DELETE http://localhost:3002/estoque/1/12.345.678%2F0001-90
