@@ -1,6 +1,6 @@
-# 📚 Atividades e Práticas — MySQL + Node.js + React Native
+# Atividades 
 
-Repositório unificado com as soluções completas das atividades práticas propostas no curso do professor [wdiasmaciel](https://github.com/wdiasmaciel).
+Repositório unificado com as soluções completas dos alunos do grupo 3 e das atividades práticas propostas no curso do professor [wdiasmaciel](https://github.com/wdiasmaciel).
 
 ---
 
