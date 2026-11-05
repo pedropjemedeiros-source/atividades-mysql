@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "name": "Loja de Informática",
+    "slug": "loja-informatica",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
