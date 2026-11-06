@@ -3,8 +3,7 @@
 -- Repositório: wdiasmaciel/01-banco-de-dados-mysql
 -- ========================================================
 
-DROP DATABASE IF EXISTS empresa;
-CREATE DATABASE empresa;
+CREATE DATABASE IF NOT EXISTS empresa;
 USE empresa;
 
 -- ========================================================

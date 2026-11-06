@@ -128,7 +128,6 @@ ADD COLUMN ativo TINYINT(1) DEFAULT 1,
 ADD INDEX idx_viagem_destino (destino);
 
 -- 20. Escreva uma sequência de alterações que aumente o tamanho de um campo de e-mail, renomeie esse campo para email_contato e adicione uma restrição única.
-ALTER TABLE Viagem 
-MODIFY COLUMN email VARCHAR(150),
-RENAME COLUMN email TO email_contato,
-ADD CONSTRAINT uk_viagem_email UNIQUE (email_contato);
+ALTER TABLE Viagem MODIFY COLUMN email VARCHAR(150);
+ALTER TABLE Viagem RENAME COLUMN email TO email_contato;
+ALTER TABLE Viagem ADD CONSTRAINT uk_viagem_email UNIQUE (email_contato);
