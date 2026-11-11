@@ -1,15 +1,9 @@
--- ========================================================
--- TÓPICO 14: ALTER TABLE EM MYSQL
--- Repositório: wdiasmaciel/01-banco-de-dados-mysql
--- ========================================================
 
 DROP DATABASE IF EXISTS sistema_geral;
 CREATE DATABASE sistema_geral;
 USE sistema_geral;
 
--- --------------------------------------------------------
--- Preparação das Tabelas Base
--- --------------------------------------------------------
+
 CREATE TABLE Padaria_Pao (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(60) NOT NULL,
@@ -45,9 +39,9 @@ CREATE TABLE Cliente_Viagem (
     nome VARCHAR(100)
 );
 
--- ========================================================
+
 -- EXERCÍCIOS RESOLVIDOS (1 a 20)
--- ========================================================
+
 
 -- 1. Em uma tabela chamada Padaria_Pao, adicione uma coluna data_fabricacao do tipo DATE que não permita valor nulo.
 ALTER TABLE Padaria_Pao 
