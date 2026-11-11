@@ -1,14 +1,7 @@
--- ========================================================
--- TÓPICO 07: UPDATE EM TABELAS MYSQL
--- Repositório: wdiasmaciel/01-banco-de-dados-mysql
--- ========================================================
-
+-- 1
 CREATE DATABASE IF NOT EXISTS empresa;
 USE empresa;
 
--- ========================================================
--- Exercício 1 — Continuação do projeto: Produto
--- ========================================================
 
 DROP TABLE IF EXISTS Produto;
 
@@ -56,10 +49,7 @@ WHERE id IN (2, 3, 4);
 -- RESPOSTA: Executar um UPDATE no campo `cnpj_fornecedor` sem WHERE alteraria TODOS os produtos da empresa
 -- para pertencerem a um único fornecedor, corrompendo a integridade referencial dos dados comerciais.
 
-
--- ========================================================
--- Exercício 2 — Padaria: tabela Pedido
--- ========================================================
+-- 2
 
 DROP TABLE IF EXISTS Pedido;
 
@@ -103,9 +93,7 @@ SET observacao = CONCAT(COALESCE(observacao, ''), ' - pedido grande')
 WHERE quantidade > 10;
 
 
--- ========================================================
--- Exercício 3 — Agência de viagens: tabela Pacote
--- ========================================================
+-- 3 
 
 DROP TABLE IF EXISTS Pacote;
 
