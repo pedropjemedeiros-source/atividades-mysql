@@ -1,14 +1,7 @@
 
--- TÓPICO 06: FORNECEDOR - RESTRIÇÕES, INSERT, SELECT
--- Repositório: wdiasmaciel/01-banco-de-dados-mysql
-
-
 DROP DATABASE IF EXISTS empresa;
 CREATE DATABASE empresa;
 USE empresa;
-
-
--- Estrutura da Tabela Fornecedor
 
 DROP TABLE IF EXISTS Fornecedor;
 
@@ -19,7 +12,6 @@ CREATE TABLE Fornecedor (
     endereco VARCHAR(255) NOT NULL
 );
 
--- Inserções base para teste inicial
 INSERT INTO Fornecedor (nome, telefone, endereco) VALUES
 ('Tech Distribuidora', '(11) 98888-1111', 'Rua Augusta, 100 - São Paulo, SP'),
 ('Papelaria Central', '(21) 97777-2222', 'Av. Rio Branco, 250 - Rio de Janeiro, RJ'),
