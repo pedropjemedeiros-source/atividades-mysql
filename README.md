@@ -1,4 +1,4 @@
-
+## text
 atividades-mysql/
 ├── 01-banco-de-dados-mysql/
 │   ├── 06-fornecedor-restricoes-insert-select/
