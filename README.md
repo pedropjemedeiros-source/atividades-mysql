@@ -1,31 +1,4 @@
-# Atividades 
 
-Repositório unificado com as soluções completas dos alunos do grupo 3 e das atividades práticas propostas no curso do professor [wdiasmaciel](https://github.com/wdiasmaciel).
-
----
-
-## 📌 Status das Atividades
-
-| Tópico / Módulo | Atividade Proposta | Status | Localização |
-| :--- | :--- | :---: | :--- |
-| **01-node-mysql-react-native** | Banco Loja de Informática (Cliente, Produto, Pedido) | ✅ Já Criado | Repositório `AULA-01` (`init.sql`) |
-| **01-banco-de-dados-mysql (05)** | Empresa Aviação (Voo - 17 consultas) | ✅ Já Criado | `Downloads/empresa_aviacao_completo.sql` |
-| **01-banco-de-dados-mysql (05)** | Empresa Hotelaria (Hotel - 20 consultas) | ✅ Já Criado | `Downloads/empresa_hotelaria.sql` |
-| **01-banco-de-dados-mysql (06)** | Fornecedor (15 exercícios de Inserção, Restrições e SELECT) | 🚀 **Resolvido aqui** | `01-banco-de-dados-mysql/06-fornecedor-restricoes-insert-select/` |
-| **01-banco-de-dados-mysql (07)** | UPDATE em tabelas MySQL (Exercícios 1 a 5, incluindo 7-b e 7-c) | 🚀 **Resolvido aqui** | `01-banco-de-dados-mysql/07-fornecedor-update/` |
-| **01-banco-de-dados-mysql (14)** | ALTER TABLE (20 exercícios completos) | 🚀 **Resolvido aqui** | `01-banco-de-dados-mysql/14-alter-table/` |
-| **02-node-mysql-react-native** | Ex 1 e 2: API Node.js para Loja de Informática | ✅ Já Criado | Repositório `AULA-01` (`server.js`, `rotas/`) |
-| **02-node-mysql-react-native** | Ex 3: API Node.js para Site de Viagens | 🚀 **Resolvido aqui** | `02-node-mysql/03-site-viagens/` |
-| **02-node-mysql-react-native** | Ex 4: API Node.js para Controle de Estoque nas Filiais | 🚀 **Resolvido aqui** | `02-node-mysql/04-controle-estoque/` |
-| **03-node-mysql-react-native** | Ex 1 e 2: App React Native para Loja de Informática | ✅ Já Criado | Repositório `AULA-01/meu-app` |
-| **03-node-mysql-react-native** | Ex 3: App React Native para Site de Viagens | 🚀 **Resolvido aqui** | `03-react-native/site-viagens/` |
-| **03-node-mysql-react-native** | Ex 4: App React Native para Controle de Estoque | 🚀 **Resolvido aqui** | `03-react-native/controle-estoque/` |
-
----
-
-## 📂 Estrutura do Repositório
-
-```text
 atividades-mysql/
 ├── 01-banco-de-dados-mysql/
 │   ├── 06-fornecedor-restricoes-insert-select/
